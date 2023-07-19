@@ -1,0 +1,785 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,800;1,200;1,500;1,600;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,800;1,200;1,500;1,600;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,600;1,800&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", sans-serif;
+}
+
+p{
+    font-family: 'Poppins' ,sans-serif;
+}
+
+section{
+    margin-top: 100px;
+}
+ header{
+    background-size: cover;
+    background-position: 0px 0px;
+    background-image: url(../imgs/bg.jpg);
+    background-attachment:unset;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6);
+  
+ }
+ .bg-gray {
+    background: #f7f7f7;
+}
+
+/* navbar */
+
+
+.navbar-nav .nav-link.active::before {
+    content: "";
+    width: 80%;
+    height: 2px !important;
+    position: absolute;
+    
+    background-color:rgb(244, 239, 239);
+    transition: width .2s ease-in;
+}
+
+
+nav ul li a{
+  
+    color: #fff !important;
+}
+
+
+/* navbar */
+/* section home */
+.home-text h1{
+    font-family: 'Montserrat' ,sans-serif;
+    font-weight: 700;
+    font-size:50px ;
+}
+/* section home */
+header .social-icon span {
+    color:#fff;
+    font-size: 15px;
+    width: 39px;
+    height: 39px;
+    line-height: 38px;
+    border-radius: 50%;
+    display: inline-block;
+    background: rgba(0, 0, 0, .3);
+  
+}
+
+ header div p::after{
+    content:"|";
+}
+
+header div p span::after{
+    content:"";
+    font-weight: 400;
+    animation:typing 6s infinite;
+    
+}
+
+/* section about */
+#skills .progress{
+    height: 25px;
+    border-radius: 5px;
+}
+#skills .progress-bar{
+    height: 100%;
+    border-radius: 5px;
+}
+
+.btn1{
+background-color:black;
+color: #fff;
+    transition: all .5s;
+}
+
+.btn1:hover{
+    color: black;
+    background-color: white;
+}
+
+.btn2{
+    transition: all .5s;
+}
+
+.btn2:hover{
+    background-color:black;
+    color: #fff;
+}
+
+/* end section about */
+    
+
+/* Start service section */
+
+.title h3 {
+    font-weight: 900;
+    font-size: 40px;
+    position: relative;
+    display: inline-block;
+    z-index: 4;
+}
+
+.title h3:after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+}
+#service .item {
+    padding: 50px 20px;
+    background:rgb(250, 249, 245);
+    -webkit-box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, .2);
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+#service .icon i{
+    font-size: 30px;
+    margin-bottom: 20px;
+    width: 80px;
+    height:80px;
+    line-height: 70px;
+    background: #f4f4f4;
+    border-radius: 50%;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+#service .icon:hover i{
+    color: #fff;
+    background-color: black;
+}
+
+/* End Service Section */
+
+
+
+/* Start Sectoin porto  */
+#porto .icon i {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    border-radius: 50%;
+    border: 1px solid #111;
+    background: #111;
+    color: #eee;
+}
+
+#porto .item-pic .layer{
+    background-color: rgba(250, 246, 246, 1);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    left: 10px;
+    bottom: 10px;
+    opacity: 0;
+    transition: 0.5s all;
+}
+#porto .item-pic:hover .layer{
+    opacity: 1;
+}
+
+#porto .item-pic .porto-text{
+    top:45%;
+    opacity: 0;
+    transition:  0.3s all;
+}
+
+#porto .item-pic:hover .porto-text{
+    top:50%;
+    opacity: 1;
+}
+#porto .item-pic .porto-icons{
+    display: inline-block;
+    top:65%;
+    opacity: 0;
+    transition:  0.3s all;
+}
+
+#porto .item-pic:hover .porto-icons{
+    top:60%;
+    opacity: 1;
+}
+
+.porto-content ul  button{
+    background-color: transparent;
+    color: black;
+    font-weight:700;
+}
+
+
+.porto-content ul li:not(:active) button::after{
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: 40px;
+    width:0%;
+    
+    height: 3px;
+    background-color:black;
+    transition: all .5s;
+}
+.porto-content ul li:has(.active) button::after{
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: 40px;
+    width:60%;
+    
+    height: 3px;
+    background-color:black;
+}
+
+
+/* End Section Porto */
+
+/* Start section work */
+
+
+.carousel-inner p{
+    font-size: smaller;
+}
+
+.carousel-inner h6{
+    font-weight: 600;
+}
+
+
+.bgport .one button{
+width: 8px;
+height: 8px;
+margin-right: 12px;
+background-color: gray;
+transform: translate(0,-200%);
+     
+}
+.bgport{
+    height: 400px;
+
+}
+.carousel-item img{
+    width: 12%;
+}
+
+/* End section work */
+
+/* Start section Team */
+.team-content{
+    background-color: rgb(84, 84, 84);
+    padding-top: 20px;
+    color: #fff;
+    line-height: 6px;
+    
+}
+@media only screen and (max-width: 768px) {
+    .team-content{
+       width: 77%;
+        
+    }
+  }
+  
+.team-edge .layout{
+    background-color: rgba(255, 255, 255, 0.95);
+    position: absolute;
+    text-align: center;
+    inset: 5px;
+    opacity: 0;
+    
+    transform: rotateY(180deg) scale(0.5, 0.5);
+    transition: 0.5s all;
+}
+.team-edge:hover .layout{
+    opacity: 1;
+    transform: rotateY(0) scale(1, 1);
+}
+
+.img-area img{
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    overflow: hidden;
+   
+    transition: all .5s;
+}
+@media only screen and (max-width: 768px) {
+    .img-area{
+       width: 77%;
+        
+    }
+  }
+.img-area:hover img{
+    scale: 1.5;
+}
+
+.layout ul{
+    text-align: center;
+    position: relative;
+    top: 160px;
+    display: flex;
+    justify-content:space-around;
+    
+    
+}
+.layout ul li{
+    list-style: none;
+    width: 60px;
+    height: 60px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: #111;
+    text-align: center;
+    padding-top: 15px;
+    transition: all .2s;
+
+}
+
+.layout ul li a{
+    
+    color: white;
+    transition: all .2s;
+}
+
+.layout ul li:hover a{
+    color: #111 !important;
+}
+.layout ul li:hover{
+    background-color: rgb(235, 221, 196);
+}
+
+/* End Section Team */
+
+
+/* Start section contact us */
+.info-add li{
+    list-style: none    ;
+    width: 50px;
+    height: 50px;
+margin-left: 50%;
+transform: translateX(-50%);
+    border-radius: 50%;
+    background-color: #ecefe9;
+    text-align: center;
+    padding-top: 9px;
+    transition: all .2s;
+}
+
+.info-add:hover li{
+    background-color: black;
+}
+
+.info-add li a{
+    font-size: 24px;
+    color: #111;
+    transition: all .2s;
+}
+
+.info-add:hover li a{
+    color: #eee;
+}
+
+.info-add p{
+    font-size: 14px;
+}
+
+form button{
+    font-size: 14px;
+    color: #fff;
+    width: 140px;
+    height: 34px;
+    background-color: #111;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: all .5s
+}
+form button:hover{
+    background-color: #fff;
+    color: #111;
+}
+
+/* @media only screen and (max-width: 560px) {
+    form .button{
+       width: 100%;
+        
+    }
+  } */
+
+
+/* End section contact us */
+
+
+/* Start footer */
+footer{
+    margin-top: 100px;
+    padding-bottom: 30px;
+    background-color: #1c1c1c;
+}
+
+footer p{
+    padding-top: 10px;
+    font-size: 12px;
+    color: gray;
+}
+/* End footer */
+
+
+
+
+
+
+
+ 
+
+ @keyframes typing{
+    0%{    content: " L";}
+    1.5%{    content: " La";}
+    3%{    content: " Larr";}
+    4.5%{    content: " Larry";}
+    6%{    content: " Larry ";}
+    7.5%{    content: " Laarry D";}
+    9%{    content: " Laarry Da";}
+    10.5%{    content: " Laarry Dan";}
+    12%{    content: " Laarry Dani";}
+    13.5%{    content: " Laarry Danie";}
+    15%{    content: " Laarry Daniel";}
+    16.5%{    content: " Laarry Daniels";}
+    19.6%{    content: " Laarry Daniel";}
+    21.1%{    content: " Laarry Danie";}
+    22.6%{    content: " Laarry Dani";}
+    23.1%{    content: " Laarry Dan";}
+    24.6%{    content: " Laarry Da";}
+    26.1%{    content: " Laarry D";}
+    27.6%{    content: " Laarry ";}
+    29.1%{    content: " Laarry";}
+    30.6%{    content: " Laarr";}
+    32.1%{    content: " Laar";}
+    33.6%{    content: " Laa";}
+    35.1%{    content: " La";}
+    36.6%{    content: " L";}
+    38.1%{    content: " ";}
+    41.3%{    content: " D";}
+    42.8%{    content: " De";}
+    44.3%{    content: " Dev";}
+    45.8%{    content: " Deve";}
+    47.3%{    content: " Devel";}
+    48.8%{    content: " Develo";}
+    50.3%{    content: " Deevelop";}
+    51.8%{    content: " Develope";}
+    53.3%{    content: " Developer";}
+    56.4%{    content: " Develope";}
+    57.9%{    content: " Develop";}
+    59.4%{    content: " Develo";}
+    60.9%{    content: " Devel";}
+    62.4%{    content: " Deve";}
+    63.9%{    content: " Dev";}
+    65.4%{    content: " De";}
+    66.9%{    content: " D";}
+    68.4%{    content: " ";}
+    71.5%{    content: " D";}
+    73%{    content: " De";}
+    74.5%{    content: " Des";}
+    76%{    content: " Desi";}
+    78.5%{    content: " Desig";}
+    80%{    content: " Design";}
+    81.5%{    content: " Designe";}
+    83%{    content: " Designer";}
+    86.1%{    content: " Designe";}
+    87.6%{    content: " Design";}
+    89.1%{    content: " Desig";}
+    90.6%{    content: " Desi";}
+    92.1%{    content: " Des";}
+    93.6%{    content: " De";}
+    95.1%{    content: " D";}
+    100%{    content: " ";}
+}
+
+
+
+/* ********************************************************************************************************* */
+/* Start the html Portofolio */
+#portoHome{
+    background-image: url(../img/overlay-bg.jpg);
+    background-size:cover;
+    background-position:center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 50vh;
+    width: 100%;
+    box-shadow: inset 0 0 0 1000px rgba(0, 120, 255,.8);
+}
+
+.dgport .many  button{
+  background-color:#0078FF;
+    width:10px;
+    height: 10px;
+    position: relative;
+    top: 50px;
+}
+
+.dgport .many button:not(.active){
+
+    background-color: #cdced0;
+}
+
+/* *********************************** */
+/* bolgDetails */
+/* start section search */
+#search .leg ul{
+    border-left: 4px solid #0078ff;
+    margin-top: 1rem;
+    
+}
+.leg li{
+    padding-left: 17px;
+}
+
+.leg blockquote{
+    border-left: 4px solid #0078ff;
+    margin-top: 1rem;
+
+    height: 100px;
+}
+
+.leg blockquote p{
+    padding-top:17px;
+    padding-left: 17px;
+}
+
+.arm h3 {
+    border-left: 5px solid #0078ff;
+    margin-left: 20%;
+}
+
+.toungue h3::after{
+   
+        content: "";
+        position: absolute;
+        left: 0;
+        width:18%;
+        height: 3px;
+        background-color: #0078FF;
+        bottom: -10px;
+     
+}
+
+.mouth h2::after{
+   
+    content: "";
+    position: absolute;
+    left: 0;
+    width:18%;
+    height: 3px;
+    background-color: #0078FF;
+    bottom: -10px;
+ 
+}
+
+.arm button{
+   height: 2.5rem;
+   background-color: #0078FF;
+   margin-left: 0;
+   width: 60px;
+   transition:all ;
+   border-radius: 0;
+}
+.arm button:hover{
+    background-color: #0078FF;
+}
+
+.arm input{
+    margin-left: 30%;
+    width: 50%;
+    display: inline;
+    border-right: 0;
+    margin-right: 0;
+    border-radius: 0;
+}
+
+.nose li a{
+    color: black;
+    transition: all,.5s;
+}
+
+.nose li a:hover{
+    color: #0078FF;
+}
+
+.nose ul :nth-child(1) ::before{
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 3px;
+    left: 0;
+    background-color: #0078ff;
+    top: 10px;
+}
+
+
+.nose ul :nth-child(2) ::before{
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 3px;
+    left: 0;
+    background-color: #0078ff;
+    top: 35px;
+}
+
+
+.nose ul :nth-child(3) ::before{
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 3px;
+    left: 0;
+    background-color: #0078ff;
+    top: 83px;
+}
+
+
+.nose ul :nth-child(4) ::before{
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 3px;
+    left: 0;
+    background-color: #0078ff;
+    top: 108px;
+}
+
+
+.nose ul :nth-child(5) ::before{
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 3px;
+    left: 0;
+    background-color: #0078ff;
+    top: 154px;
+}
+
+.ears ul :nth-child(1) ::before{
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 3px;
+    left: 0;
+    background-color: #0078ff;
+    top: 10px;
+}
+
+.ears ul :nth-child(2) ::before{
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 3px;
+    left: 0;
+    background-color: #0078ff;
+    top: 37px;
+}
+
+.ears ul :nth-child(3) ::before{
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 3px;
+    left: 0;
+    background-color: #0078ff;
+    top: 60px;
+}
+
+.ears ul :nth-child(4) ::before{
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 3px;
+    left: 0;
+    background-color: #0078ff;
+    top: 83px;
+}
+
+.ears ul :nth-child(5) ::before{
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 3px;
+    left: 0;
+    background-color: #0078ff;
+    top: 132px;
+}
+.ears li a{
+    color: black;
+    transition: all,.5s;
+}
+
+.ears li a:hover{
+    color: #0078FF;
+}
+
+.nose ul{
+    margin-left: 20%;
+}
+
+.ears ul{
+    margin-left: 20%;
+}
+
+.eyes li a{
+    background-color: #0078FF;
+    
+
+}
+.eyes ul{
+    margin-left: 10%;
+}
+
+.eyes ul li:nth-child(1){
+    position: absolute;
+    left: 20%;
+    
+}
+.eyes ul li:nth-child(2){
+    position: absolute;
+    left: 37%;
+    
+}
+.eyes ul li:nth-child(3){
+    position: absolute;
+    left: 59%;
+    
+}
+.eyes ul li:nth-child(4){
+    position: absolute;
+    top: 90%;
+    left: 20%;
+   
+}
+.eyes ul li:nth-child(5){
+    position: absolute;
+    top: 90%;
+    left: 50%;
+   
+}
+.eyes ul li:nth-child(6){
+    position: absolute;
+    top: 170%;
+    left: 20%;
+    
+}
+
+
+.imge img{
+    width: 50%;
+}
+/* End section search */
